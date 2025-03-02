@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+    color: black;
+    overflow: hidden;
+}
+
+.moving-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.captcha {
+    margin-top: 20px;
+}
+
+.annoying-text {
+    filter: blur(5px);
+}
+
+.annoying-text:hover {
+    filter: blur(0);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: yellow;
+    padding: 20px;
+    border: 2px solid black;
+}
